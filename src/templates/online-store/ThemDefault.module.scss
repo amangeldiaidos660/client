@@ -1,0 +1,39 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0073e6;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 25px;
+        font-weight: 700;
+        color: white;
+    }
+
+    &__list {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__link {
+        display: block;
+        padding: 25px 0;
+        font-size: 25px;
+        color: white;
+        &:hover {
+            color: greenyellow;
+        }
+    }
+}
+
+.active {
+    color: greenyellow;
+    text-decoration: underline;
+}

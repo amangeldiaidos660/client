@@ -1,0 +1,242 @@
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &-icon {
+        width: 15px;
+        height: 18px;
+      }
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+  &__setting {
+    padding: 10px;
+    &-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__clear {
+    font-size: 14px;
+    color: #de4b22f5;
+  }
+  &__form {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button {
+      font-size: 25px;
+    }
+  }
+  &__input {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    width: 70%;
+  }
+  &__number{
+    display: flex;
+    align-items: end;
+    gap: 5px;
+    height: 100%;
+  }
+
+}
+
+.menu {
+  padding: 10px !important;
+  min-height: 100vh;
+
+  &__layout {
+    padding: 20px;
+  }
+
+  &__back {
+    display: block;
+    background: #fc7a7a;
+    font-size: 16px;
+    padding: 10px;
+    width: max-content;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 15px;
+  }
+  &__link {
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+    &.active {
+      background: #bcb6b6;
+    }
+  }
+}
+
+
+.cashRegister {
+  display: flex;
+  gap: 5px;
+  &__left {
+    width: 80%;
+  }
+
+  &__right {
+    width: 20%;
+  }
+}
+
+.table {
+
+  border: 1px solid #000;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+
+  &__dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #706e6e8f;
+    height: 100vh;
+    width: 100vh;
+    z-index: -100;
+  }
+
+  &__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__head {
+    width: 100%;
+    background: #c5eeff;
+
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: start;
+    }
+    &-col {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 10px;
+    }
+  }
+
+  &__body {
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(4, ifr);
+      border-bottom: 1px solid #000;
+      cursor: pointer;
+      &:hover {
+        background: #bfed6b;
+      }
+    }
+    &-col {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.foundTable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__head {
+    width: 100%;
+    background: #c5eeff;
+
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: start;
+    }
+
+    &-col {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 10px;
+    }
+  }
+
+  &__body {
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-bottom: 1px solid #000;
+      cursor: pointer;
+      background: #bfed6b;
+    }
+    &-col {
+     padding: 10px;
+     display: flex;
+     align-items: center;
+    }
+    &-del {
+      padding: 5px 10px;
+      border: 1px solid #000;
+      background: #d67878e9;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  &__counter {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+
+    &-minus {
+      border: 1px solid #000;
+      width: 30px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f7b279;
+    }
+
+    &-plus {
+      border: 1px solid #000;
+      width: 30px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #89e373;
+    }
+
+    &-input {
+      max-width: 70px;
+      width: 100%;
+      text-align: center;
+
+    }
+  }
+}
+
+

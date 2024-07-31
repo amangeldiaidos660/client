@@ -1,0 +1,16 @@
+.nav {
+    // box-shadow: 0 0 10px 0 black;
+    // box-shadow: 0 0 10px 0 red;
+& .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ &__list {
+    display: flex;
+    gap: 50px;
+    padding: 20px 5px;
+ }
+}
+
+

@@ -1,0 +1,51 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #3f6f22;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(255, 89, 0);
+    }
+
+    &__list {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__link {
+        display: block;
+        padding: 15px 0 25px;
+        font-size: 25px;
+        color: white;
+        &:hover {
+            color: rgb(255, 89, 0);
+        }
+    }
+}
+
+.active {
+    color: rgb(255, 89, 0);
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgb(255, 89, 0);
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
